@@ -9,7 +9,7 @@ html, body, .main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 30px;
+    gap: 0px;
     background-color: khaki;
 }
 .pixel {
@@ -30,6 +30,14 @@ html, body, .main {
 
 }
 
-.container div:hover {
-    background-color: aqua;
+.controller {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: rgb(63, 36, 0);
 }

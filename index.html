@@ -9,11 +9,26 @@
 </head>
 <body>
     <div class="main">
+        <div class="header">
+            <h1>
+                Etch-a-Sketch
+            </h1>
+        </div>
         <div class="controller">
-            <input type="range" id="pixel-num" name="pixel-num" min="16" max="100" value="16">
-            <input type="color" name="color-picker" id="color-picker">
+            <div class="numPixelSec">
+                <p class="text">Number of pixels :</p>
+                <p id="numberOfPixels" class="text"> 8 x 8</p>
+                <input type="range" id="pixel-num" name="pixel-num" min="16" max="100" value="16">    
+            </div>
+            <div class="colorPickerSec">
+                <p class="text">Pick a color :</p>
+                <input type="color" name="color-picker" id="color-picker">
+            </div>
         </div>
         <div class="container"></div>
+        <div class="footer">
+            <h2 class="text">Developed by <a href="https://github.com/osama24sy" target="_blank">Osama SHBIB</a></h2>
+        </div>
     </div>
 </body>
 <script src="./script.js"></script>

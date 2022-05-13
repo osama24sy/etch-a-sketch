@@ -1,5 +1,6 @@
 const container = document.querySelector(".container");
-const pixelNumInput = document.querySelector("#pixel-num")
+const pixelNumInput = document.querySelector("#pixel-num");
+const numberOfPixels = document.getElementById("numberOfPixels");
 let pixelNum = 16;
 
 for (let i = 0; i < pixelNum*pixelNum; i++) {
@@ -10,6 +11,7 @@ for (let i = 0; i < pixelNum*pixelNum; i++) {
 
 pixelNumInput.addEventListener("input", () => {
     pixelNum = pixelNumInput.value;
+    numberOfPixels.textContent = ` ${pixelNum} x ${pixelNum}`;
     console.log(pixelNum);
     container.innerHTML = "";
     for (let i = 0; i < pixelNum*pixelNum; i++) {
